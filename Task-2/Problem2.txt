@@ -1,0 +1,21 @@
+Function Main
+    Declare Integer a, b, i, n, next
+    
+    Output "This is a program to calculate and print the first m Fibonacci numbers"
+    Output "Enter the number of terms you would like to display"
+    Input n
+    Assign i = 0
+    Assign a = 0
+    Assign b = 1
+    While i<n
+        If i<=1
+            Assign next = i
+        False:
+            Assign next = a+b
+            Assign a = b
+            Assign b = next
+        End
+        Output next
+        Assign i = i+1
+    End
+End

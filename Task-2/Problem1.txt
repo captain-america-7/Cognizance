@@ -1,0 +1,16 @@
+Function Main
+    Declare Integer num, x, y, sum
+    
+    Input num
+    Assign sum = 0
+    While num>0
+        Assign y = num%10
+        Assign sum = sum+y
+        Assign num = num/10
+    End
+    If sum%3==0
+        Output "True"
+    False:
+        Output "False"
+    End
+End
